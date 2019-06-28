@@ -1,0 +1,19 @@
+<configuration>
+    <!-- Configure the Console appender -->
+    <!-- use Spring default values -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <logger name="cz.lundegaard" level="debug"/>
+    <logger name="org.springframework" level="warn"/>
+    <logger name="org.springframework.data.mongodb" level="error"/>
+    <root level="INFO">
+        <appender-ref ref="Console" />
+    </root>
+</configuration>

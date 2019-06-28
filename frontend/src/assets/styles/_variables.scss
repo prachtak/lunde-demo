@@ -1,0 +1,54 @@
+// colors
+$white: #fff;
+$black: #000;
+
+// black / grey
+$grey-darker: #43425d;
+$grey-dark: #838292;
+$grey-base: #b3b3bb;
+$grey-light: #dbdbdd;
+$grey-lighter: #f1f1f3;
+
+// primary
+$primary: #00c389;
+$primary-hover: #00ab78;
+$primary-press: #009267;
+
+// secondary
+$secondary-01: #ef2138;
+$secondary-02: #e52f96;
+$secondary-03: #b11eb1;
+$secondary-04: #440099;
+$secondary-complement-01: #00afd7;
+$secondary-complement-02: #9ecc00;
+$secondary-complement-03: #ffb300;
+$secondary-complement-04: #ffdd00;
+
+// v1
+$c-rose: #d04646;
+$c-grey: #999999;
+$c-grey-light: #e9e9e9;
+
+$c-danger: $secondary-01;
+$c-danger-dark: #cc0000;
+
+$c-warning: #ffbb33;
+$c-warning-dark: #ff8800;
+
+$c-success: #00c851;
+$c-success-dark: #007e33;
+
+$c-info: #33b5e5;
+$c-info-dark: #0099cc;
+
+$c-default: #2bbbad;
+$c-default-dark: #00695c;
+
+$c-primary: #4285f4;
+$c-primary-dark: #0d47a1;
+
+$c-secondary: #aa66cc;
+$c-secondary-dark: #9933cc;
+
+$c-03: $c-warning;
+$c-03-dark: $c-warning-dark;

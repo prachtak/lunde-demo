@@ -1,0 +1,39 @@
+.md-form input[type='text']:focus:not([readonly]),
+.md-form input[type='password']:focus:not([readonly]),
+.md-form input[type='email']:focus:not([readonly]),
+.md-form input[type='url']:focus:not([readonly]),
+.md-form input[type='time']:focus:not([readonly]),
+.md-form input[type='date']:focus:not([readonly]),
+.md-form input[type='datetime-local']:focus:not([readonly]),
+.md-form input[type='tel']:focus:not([readonly]),
+.md-form input[type='number']:focus:not([readonly]),
+.md-form input[type='search-md']:focus:not([readonly]),
+.md-form input[type='search']:focus:not([readonly]),
+.md-form textarea.md-textarea:focus:not([readonly]) {
+  box-shadow: 0 1px 0 0 $primary;
+  border-bottom-color: $primary;
+}
+
+.md-form input[type='text']:focus:not([readonly]) + label,
+.md-form input[type='password']:focus:not([readonly]) + label,
+.md-form input[type='email']:focus:not([readonly]) + label,
+.md-form input[type='url']:focus:not([readonly]) + label,
+.md-form input[type='time']:focus:not([readonly]) + label,
+.md-form input[type='date']:focus:not([readonly]) + label,
+.md-form input[type='datetime-local']:focus:not([readonly]) + label,
+.md-form input[type='tel']:focus:not([readonly]) + label,
+.md-form input[type='number']:focus:not([readonly]) + label,
+.md-form input[type='search-md']:focus:not([readonly]) + label,
+.md-form input[type='search']:focus:not([readonly]) + label,
+.md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: $primary;
+}
+
+.md-form .form-control.is-invalid {
+  border-color: $c-danger;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23ef2138' viewBox='-2 -2 7 7'><path stroke='%23ef2138' d='M0 0l3 3m0-3L0 3'/><circle r='.5'/><circle cx='3' r='.5'/><circle cy='3' r='.5'/><circle cx='3' cy='3' r='.5'/></svg>");
+}
+
+.invalid-feedback {
+  color: $c-danger;
+}

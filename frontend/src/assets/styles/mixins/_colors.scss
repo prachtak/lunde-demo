@@ -1,0 +1,164 @@
+// mixins
+@mixin hoverable-color($color) {
+  &,
+  &:hover,
+  &:active {
+    color: $color !important;
+  }
+}
+
+@mixin hoverable-light {
+  @include hoverable-color($white);
+}
+
+@mixin hoverable-dark {
+  @include hoverable-color($black);
+}
+
+@mixin btn {
+  padding: 0.84rem 2.14rem;
+}
+
+@mixin btn-outline {
+  padding: 0.7rem 2rem;
+  border-width: 0.14rem;
+  border-style: solid;
+}
+
+// main theme
+.btn-c-outline-primary {
+  @include btn-outline;
+  color: $primary;
+  background-color: $white;
+  border-color: $primary;
+
+  &:hover {
+    color: $primary-hover;
+    border-color: $primary-hover;
+  }
+  &:active {
+    color: $primary-press;
+    border-color: $primary-press;
+  }
+}
+
+.btn-c-primary {
+  @include hoverable-light;
+  background-color: $primary;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+  &:active {
+    background-color: $primary-press;
+  }
+}
+
+.btn-c-secondary {
+  @include btn-outline;
+  color: $grey-dark;
+  background-color: $white;
+  border-color: $grey-dark;
+
+  &:hover {
+    color: $white;
+    background-color: $grey-dark;
+  }
+  &:active {
+    color: $white;
+    background-color: $grey-darker;
+    border-color: $grey-darker;
+  }
+}
+
+.btn-c-highlight {
+  @include hoverable-light;
+  background-color: $secondary-02;
+
+  &:hover {
+    background-color: $secondary-03;
+  }
+  &:active {
+    background-color: $secondary-04;
+  }
+}
+
+.btn {
+  &[disabled],
+  &:disabled {
+    color: $grey-base;
+    background-color: $grey-light;
+    opacity: 1;
+  }
+}
+
+.text-c-primary {
+  color: $primary;
+}
+.text-c-sec-01 {
+  color: $secondary-01;
+}
+.text-c-sec-02 {
+  color: $secondary-02;
+}
+.text-c-sec-03 {
+  color: $secondary-03;
+}
+.text-c-sec-04 {
+  color: $secondary-04;
+}
+.text-c-sec-cpm-01 {
+  color: $secondary-complement-01;
+}
+.text-c-sec-cpm-02 {
+  color: $secondary-complement-02;
+}
+.text-c-sec-cpm-03 {
+  color: $secondary-complement-03;
+}
+.text-c-sec-cpm-04 {
+  color: $secondary-complement-04;
+}
+
+// v1
+// rose
+.rose,
+.btn-rose {
+  background-color: $c-rose;
+
+  &.btn {
+    color: $white;
+
+    &:hover {
+      background-color: darken($c-rose, 10%);
+    }
+  }
+}
+.text-rose {
+  color: $c-rose;
+}
+
+// warning
+.c-03,
+.btn-c-03 {
+  background-color: lighten($c-03-dark, 10%);
+
+  &.btn {
+    color: $white;
+
+    &:hover {
+      background-color: $c-03-dark;
+    }
+  }
+}
+.text-c-03 {
+  color: $c-03-dark;
+}
+
+.grey {
+  color: $white;
+  background-color: $c-grey;
+}
+.text-grey {
+  color: $c-grey;
+}

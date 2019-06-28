@@ -1,0 +1,49 @@
+@charset 'UTF-8';
+
+$roboto-font-path: '~mdbvue/build/font/roboto/';
+$image-path: '~mdbvue/build/img/';
+
+// Bootstrap
+@import '~mdbvue/build/scss/core/bootstrap/functions';
+@import '~mdbvue/build/scss/core/bootstrap/variables';
+
+// CORE
+@import '~mdbvue/build/scss/core/mixins';
+// Your custom variables
+@import '~mdbvue/build/scss/custom-variables';
+@import '~mdbvue/build/scss/core/colors';
+@import '~mdbvue/build/scss/core/variables';
+@import '~mdbvue/build/scss/core/global';
+@import '~mdbvue/build/scss/core/helpers';
+@import '~mdbvue/build/scss/core/typography';
+// @import '~mdbvue/build/scss/core/masks';
+@import '~mdbvue/build/scss/core/waves';
+
+// FREE
+@import '~mdbvue/build/scss/free/animations-basic';
+@import '~mdbvue/build/scss/free/modules/animations-extended/module';
+@import '~mdbvue/build/scss/free/buttons';
+@import '~mdbvue/build/scss/free/cards';
+@import '~mdbvue/build/scss/free/dropdowns';
+@import '~mdbvue/build/scss/free/input-group';
+@import '~mdbvue/build/scss/free/navbars';
+@import '~mdbvue/build/scss/free/pagination';
+@import '~mdbvue/build/scss/free/badges';
+@import '~mdbvue/build/scss/free/modals';
+@import '~mdbvue/build/scss/free/carousels';
+@import '~mdbvue/build/scss/free/forms';
+@import '~mdbvue/build/scss/free/msc';
+@import '~mdbvue/build/scss/free/footers';
+@import '~mdbvue/build/scss/free/list-group';
+@import '~mdbvue/build/scss/free/tables';
+@import '~mdbvue/build/scss/free/depreciated';
+@import '~mdbvue/build/scss/free/steppers';
+@import '~mdbvue/build/scss/free/loader';
+@import '~mdbvue/build/scss/free/treeview';
+// Free addons
+// @import '~mdbvue/build/scss/addons/datatables';
+// @import '~mdbvue/build/scss/addons/datatables-select';
+// @import '~mdbvue/build/scss/addons/directives';
+
+// Your custom styles
+@import '~mdbvue/build/scss/custom-styles';

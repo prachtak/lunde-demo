@@ -1,0 +1,147 @@
+@import '~@/assets/styles/mixins/breakpoints';
+
+// fixes
+.btn[class*='btn-outline-'] {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+// notifications
+.notify-container {
+  margin-top: 60px;
+  margin-right: 1rem;
+
+  .notify {
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-left-width: 5px;
+    border-left-style: solid;
+
+    // default color (info)
+    color: #ffffff;
+    background: #44a4fc;
+    border-left-color: #187fe7;
+
+    &-icon {
+      align-self: center;
+      margin-right: 0.4rem;
+      padding-bottom: 0.1rem;
+    }
+
+    &-title {
+      font-weight: 400;
+    }
+
+    // color variants
+    &-warn,
+    &-warning {
+      background: #ffaa33;
+      border-left-color: #ff8800;
+    }
+
+    &-danger,
+    &-error {
+      background: #e54d42;
+      border-left-color: #b82e24;
+    }
+
+    &-success {
+      background: $primary;
+      border-left-color: $primary-press;
+    }
+  }
+}
+
+// customized card
+.card {
+  $header-offset: 0.75em;
+
+  &.card-primary {
+    margin-top: $header-offset;
+    font-weight: 300;
+
+    .card-title {
+      margin: 0 auto;
+      margin-top: -$header-offset;
+      padding: 0.75em 5em;
+      font-size: 1.25rem;
+      border-radius: 0.25rem;
+
+      text-align: center;
+      color: $white;
+      background-color: $primary;
+    }
+  }
+
+  &.card-secondary {
+    margin-top: $header-offset;
+    font-weight: 300;
+
+    .card-title {
+      padding: 1rem;
+      padding-bottom: 0;
+      font-size: 1.25rem;
+      font-weight: 400;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+// paragraph
+.para {
+  $icon-size: 2.2rem;
+  $icon-margin: 0.5rem;
+  $icon-col-size: $icon-size + $icon-margin;
+
+  text-align: justify;
+
+  @include media-breakpoint-up(xl) {
+    margin-left: 2rem;
+  }
+
+  &-title {
+    display: flex;
+    font-size: 1.2rem;
+    line-height: $icon-size;
+
+    i {
+      margin-right: $icon-margin;
+      font-size: $icon-size;
+    }
+
+    &-text {
+      font-weight: 300;
+      margin-left: $icon-col-size;
+    }
+
+    i + &-text {
+      margin-left: 0;
+    }
+  }
+  &-text {
+    margin-left: $icon-col-size;
+  }
+
+  & + .para {
+    margin-top: 1.5rem;
+  }
+
+  // no title, icon on side
+  &.row {
+    & > div {
+      padding: 0;
+    }
+
+    .para-icon .material-icons {
+      font-size: $icon-size;
+    }
+
+    .para-text {
+      margin-left: 1rem;
+    }
+  }
+}
